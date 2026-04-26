@@ -1,0 +1,133 @@
+REQUEST FOR PROPOSAL
+Custom Branded Merchandise & Apparel Program
+Issued by: Meridian Health Systems
+RFP Reference: MHS-2026-MERCH-042
+Issue Date: April 15, 2026
+Submission Deadline: May 16, 2026, 5:00 PM EST
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 1 — OVERVIEW & ORGANIZATIONAL BACKGROUND
+
+Meridian Health Systems is a regional healthcare network with 18 hospital campuses and 120+ affiliated clinics across the Mid-Atlantic region (VA, MD, DC, PA). We employ approximately 42,000 staff across clinical, administrative, and operational roles.
+
+We are seeking a single preferred vendor to manage our enterprise branded merchandise and apparel program for a 3-year initial term beginning January 1, 2027. The program encompasses employee recognition, onboarding kits, departmental uniforms, patient experience gifts, and donor/community relations merchandise.
+
+Our current vendor relationship is expiring and this RFP represents an open, competitive process.
+
+Estimated annual program spend: $1.8M – $2.4M USD
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 2 — SCOPE OF SERVICES
+
+Respondents must be able to support the following program components:
+
+2A. EMPLOYEE ONBOARDING KITS
+Each new hire receives a branded welcome kit within their first week. Estimated volume: 800–1,200 new hire kits per year. Kits include: custom-branded polo or scrub top, branded tote, water bottle, notepad, and pen set. Kits must be drop-shipped directly to employee home addresses in 48 contiguous states and DC.
+
+2B. EMPLOYEE RECOGNITION PROGRAM
+Milestone recognition gifts at 1-year, 5-year, 10-year, 15-year, 20-year, and 25-year anniversaries. Estimated volume: 6,000–8,000 recognition gifts annually across all tiers. Gifts are selected from a curated catalog of branded and unbranded premium items. Tier value ranges: $25 (Year 1) to $500 (Year 25).
+
+2C. DEPARTMENTAL UNIFORM PROGRAM
+On-demand ordering portal for departmental heads to order scrubs, lab coats, and outerwear. Items must carry Meridian branding per department guidelines. Estimated annual volume: 15,000–20,000 individual garments. Portal must support cost-center billing, departmental approval workflows, and monthly consolidated invoicing.
+
+2D. COMMUNITY & PATIENT EXPERIENCE GIFTS
+Branded items for patient experience programs (e.g., NICU family kits, discharge gifts) and community health fair giveaways. Estimated volume: 25,000–35,000 units annually. Unit value range: $3–$15 per item.
+
+2E. DONOR & VIP RELATIONS MERCHANDISE
+Premium branded items for major donors and board members. Estimated volume: 200–400 pieces annually. Items should reflect premium quality appropriate for executive gifting.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 3 — TECHNICAL & PLATFORM REQUIREMENTS
+
+3A. ONLINE ORDERING PORTAL
+Vendor must provide a branded online ordering portal with:
+- Single Sign-On (SSO) integration via SAML 2.0 with our Azure AD instance
+- Role-based access controls (employee self-service, departmental approver, finance admin, program manager)
+- Cost-center/budget management with real-time spend visibility
+- Integration with our AP system (Oracle Cloud Financials) via API
+- Mobile-responsive design
+- Reporting dashboard with exportable data (CSV, XLSX)
+
+3B. DATA SECURITY & COMPLIANCE
+Meridian Health Systems is a HIPAA-covered entity. While merchandise vendor activities would not typically involve PHI, we require:
+- SOC 2 Type II certification (current, within 12 months)
+- HIPAA Business Associate Agreement (BAA) execution
+- Annual third-party security audit documentation
+- Data Processing Agreement compliant with applicable state privacy laws (VA, MD, PA, DC)
+
+3C. FULFILLMENT & LOGISTICS
+- Standard turnaround: 10 business days for decorated items; 3 business days for in-stock items
+- Rush fulfillment capability (5 business days) for at least 30% of SKU catalog
+- Drop-ship capability to home addresses for onboarding kits
+- Returns and exchange management included in program pricing
+- Damage/defect replacement at no additional cost
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 4 — PRICING REQUIREMENTS
+
+Respondents must provide pricing structured as follows:
+
+4A. Program setup fee (one-time): itemized
+4B. Per-unit pricing by product category and decoration type
+4C. Per-kit assembly and fulfillment fee (onboarding kits)
+4D. Portal licensing or platform fee (annual)
+4E. Rush fulfillment surcharge
+4F. Volume discount schedule (showing tiers at $500K, $1M, $1.5M, $2M+ annual spend)
+
+Pricing must be fixed for the initial 24 months. Adjustments in months 25–36 are permitted with 90 days written notice and capped at the prior 12-month CPI index.
+
+4G. Evaluation criteria include: total program cost (40%), service quality and SLA compliance (25%), platform capabilities (20%), sustainability credentials (10%), and company stability (5%).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 5 — SUSTAINABILITY REQUIREMENTS
+
+Meridian Health Systems has a Scope 3 emissions reduction commitment as part of our 2030 Climate Action Plan. We require vendors to:
+- Provide a current corporate sustainability report or equivalent disclosure
+- Disclose percentage of product catalog with recognized eco-certifications (GOTS, Bluesign, Fair Trade, etc.)
+- Describe packaging sustainability practices
+- Commit to annual emissions reporting for our program spend
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 6 — COMPANY QUALIFICATIONS
+
+6A. COMPANY OVERVIEW
+Provide a company history, ownership structure, number of employees, and annual revenue range.
+
+6B. FINANCIAL STABILITY
+Provide one of the following: (a) most recent audited financial statements, (b) Dun & Bradstreet report, or (c) bank reference letter confirming financial stability. Current certificate of insurance required (minimum $5M general liability).
+
+6C. REFERENCES
+Provide contact information for 3 current enterprise clients with programs of similar scope ($1M+ annual spend, multi-location, healthcare or regulated industry preferred).
+
+6D. HEALTHCARE EXPERIENCE
+Describe your experience serving healthcare or regulated-industry clients. List at least 2 healthcare system clients currently active.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 7 — CONTRACT TERMS
+
+7A. The selected vendor will be required to execute Meridian Health Systems' standard Vendor Services Agreement. Our agreement includes:
+- Net 60 payment terms (non-negotiable)
+- Unlimited indemnification clause covering any and all claims arising from vendor operations
+- Right to audit vendor records, facilities, and subcontractors with 72-hour notice
+- Unilateral contract termination with 30-day notice for any reason
+- Intellectual property assignment: all custom designs become sole property of Meridian Health Systems upon creation
+- Liquidated damages clause: $500/day for SLA breaches exceeding 3 business days
+
+7B. Vendor must agree to a 3-year exclusivity arrangement in which CustomInk (or whomever is selected) will serve as the sole provider of branded merchandise for all Meridian entities.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 8 — SUBMISSION INSTRUCTIONS
+
+Proposals must be submitted via email to procurement@meridianhealth.org by May 16, 2026 at 5:00 PM EST. Late submissions will not be accepted.
+
+Questions must be submitted in writing to rfp-questions@meridianhealth.org by April 30, 2026. Answers will be distributed to all respondents by May 7, 2026.
+
+Meridian Health Systems reserves the right to reject any or all proposals, to waive informalities, and to select the proposal deemed most advantageous to the organization.

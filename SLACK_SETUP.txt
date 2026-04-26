@@ -1,0 +1,167 @@
+═══════════════════════════════════════════════════════════════
+  CUSTOMINK RFP AGENT — Slack App Setup Guide
+  One-time setup: ~20 minutes
+═══════════════════════════════════════════════════════════════
+
+This guide walks you (or your IT team) through creating the
+Slack App and connecting it to the bot. You only do this once.
+
+
+STEP 1 — CREATE THE SLACK APP
+──────────────────────────────
+1. Go to: https://api.slack.com/apps
+2. Click "Create New App"
+3. Choose "From scratch"
+4. Name: "RFP Agent" (or "CustomInk RFP Agent")
+5. Select your workspace (CustomInk)
+6. Click "Create App"
+
+
+STEP 2 — ENABLE SOCKET MODE
+─────────────────────────────
+Socket Mode lets the bot run on your laptop/server without
+needing a public URL. Much simpler than HTTP webhooks.
+
+1. In the left sidebar: click "Socket Mode"
+2. Toggle it ON
+3. You'll be asked to create an App-Level Token:
+   - Token Name: rfp-agent-socket
+   - Add scope: connections:write
+4. Click "Generate"
+5. Copy the token (starts with xapp-) → paste into .env as SLACK_APP_TOKEN
+
+
+STEP 3 — SET BOT PERMISSIONS (OAuth Scopes)
+─────────────────────────────────────────────
+1. Left sidebar: "OAuth & Permissions"
+2. Scroll to "Scopes" → "Bot Token Scopes"
+3. Add these scopes:
+   ✓ chat:write          (post messages)
+   ✓ chat:write.public   (post to channels bot isn't in)
+   ✓ channels:read       (list channels)
+   ✓ files:write         (upload the .docx draft)
+   ✓ commands            (receive slash commands)
+   ✓ views:open          (open the modal)
+   ✓ views:write         (update the modal)
+
+
+STEP 4 — INSTALL THE APP TO YOUR WORKSPACE
+────────────────────────────────────────────
+1. Left sidebar: "Install App"
+2. Click "Install to Workspace"
+3. Authorize it
+4. Copy the "Bot User OAuth Token" (starts with xoxb-)
+   → paste into .env as SLACK_BOT_TOKEN
+
+
+STEP 5 — GET THE SIGNING SECRET
+─────────────────────────────────
+1. Left sidebar: "Basic Information"
+2. Scroll to "App Credentials"
+3. Copy "Signing Secret"
+   → paste into .env as SLACK_SIGNING_SECRET
+
+
+STEP 6 — CREATE THE /rfp SLASH COMMAND
+──────────────────────────────────────
+1. Left sidebar: "Slash Commands"
+2. Click "Create New Command"
+3. Fill in:
+   Command:      /rfp
+   Request URL:  https://placeholder.com  (won't matter in Socket Mode)
+   Description:  Submit an RFP to the CustomInk RFP Agent
+   Usage hint:   [paste RFP text or just press Enter to open form]
+4. Click "Save"
+5. Reinstall the app when prompted
+
+
+STEP 7 — ENABLE INTERACTIVITY (for modal + buttons)
+──────────────────────────────────────────────────────
+1. Left sidebar: "Interactivity & Shortcuts"
+2. Toggle Interactivity ON
+3. Request URL: https://placeholder.com (Socket Mode handles this)
+4. Click "Save Changes"
+
+
+STEP 8 — CREATE THE #rfp-responses CHANNEL
+────────────────────────────────────────────
+1. In Slack, create a new channel called #rfp-responses
+2. Invite the RFP Agent bot to the channel:
+   /invite @RFP Agent
+3. Also invite Ryan Parrish, Haley, and any other Go/No-Go reviewers
+
+
+STEP 9 — UPDATE config.py WITH SLACK IDS
+──────────────────────────────────────────
+You need to find the Slack member IDs for Ryan Parrish and Haley
+so the bot can ping them on escalations.
+
+To get a Slack member ID:
+1. In Slack, click on the person's profile
+2. Click the three dots "..." → "Copy member ID"
+3. It looks like: U0123ABC456
+
+Update config.py:
+  PRIMARY_CONTACT_SLACK_ID = "U..."  ← Kate Morton's ID
+  GO_NO_GO_SLACK_IDS       = ["U...", "U..."]  ← Haley's + Ryan's IDs
+
+
+STEP 10 — RUN THE BOT
+───────────────────────
+Once .env is filled in and requirements are installed:
+
+  Mac/Linux:
+    python3 slack_bot.py
+
+  Windows:
+    python slack_bot.py
+
+You should see:
+  ══════════════════════════════════════
+    CUSTOMINK RFP AGENT — Slack Bot
+    Listening for /rfp commands...
+  ══════════════════════════════════════
+
+Leave this terminal running. Any rep in your workspace can now
+type /rfp in any channel to kick off the process.
+
+
+KEEPING IT RUNNING (for your IT team)
+───────────────────────────────────────
+For production use, run the bot on a server (not a laptop):
+
+  Option A: Simple server (Linux VM or EC2)
+    nohup python3 slack_bot.py &
+
+  Option B: Managed service (easier)
+    Deploy to Railway.app, Render.com, or AWS Elastic Beanstalk
+    These services keep the bot running 24/7 with auto-restart
+
+  Option C: Docker (recommended for IT team)
+    A Dockerfile can be provided — ask your implementation partner.
+
+
+TROUBLESHOOTING
+────────────────
+Bot not responding to /rfp?
+  → Check that Socket Mode is enabled (Step 2)
+  → Check that SLACK_APP_TOKEN is in .env (starts with xapp-)
+  → Check that the /rfp command was created (Step 6)
+
+Modal not opening?
+  → Check that Interactivity is enabled (Step 7)
+
+.docx not uploading?
+  → Check that files:write scope is added (Step 3)
+
+"Missing environment variables" error?
+  → Make sure .env file exists in the same folder as slack_bot.py
+  → All four values must be filled in (no placeholder text)
+
+
+QUESTIONS?
+────────────
+Refer to: RFP_Agent_Technical_Build_Plan.docx
+Or contact your implementation partner.
+
+═══════════════════════════════════════════════════════════════

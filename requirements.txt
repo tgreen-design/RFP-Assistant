@@ -1,0 +1,18 @@
+# CustomInk RFP Agent — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Anthropic AI (Claude)
+anthropic>=0.97.0
+
+# Slack Bot
+slack-bolt>=1.18.0
+slack-sdk>=3.27.0
+
+# Word document generation
+python-docx>=1.1.0
+
+# HTTP / transport (needed for SOCKS proxy support in some environments)
+httpx[socks]>=0.27.0
+
+# Environment variable management
+python-dotenv>=1.0.0

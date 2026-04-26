@@ -1,0 +1,94 @@
+flowchart TD
+    subgraph INPUTS["INPUTS & TRIGGERS"]
+        A([📧 RFP Email\nInbound])
+        B([⚡ Salesforce\nStage Change Webhook])
+        C([💬 Slack\n@RFP-Bot Mention])
+    end
+
+    subgraph INTAKE["INTAKE LAYER"]
+        D[Document Parser\nLlamaParse / Unstructured.io\nPDF · Word · Excel → structured JSON]
+        E[Salesforce API\nPull opp data: account,\ncontact, deal size, deadline]
+    end
+
+    subgraph BRAIN["CORE AI AGENT  ·  Claude claude-opus-4-6 via Agent SDK"]
+        F[Orchestrator\nRoutes tasks to the\nright sub-agent]
+
+        subgraph AGENTS["SUB-AGENTS"]
+            G[Go/No-Go Agent\nScores deal viability\nR/Y/G recommendation]
+            H[Categorization Agent\nSections → Autopilot /\nNeeds Input / Legal Flag]
+            I[Question Agent\nDrafts clarification\nquestion list]
+            J[Product Rec Agent\nIndustry + profile analysis\ntrending product match]
+            K[Pricing Agent\nCompetitor scrape\nmargin modeling]
+            L[Drafting Agent\nRAG-powered response\ngeneration by section]
+            M[Brand Agent\nVisual package\ngeneration]
+            N[Compliance Agent\nPre-submission\nchecklist]
+        end
+    end
+
+    subgraph MEMORY["DATA & MEMORY LAYER"]
+        O[(Vector Database\nPinecone / pgvector\nRFP response library\nQ&A embeddings)]
+        P[(Structured DB\nPostgreSQL\nDeal data · project boards\nmargin floors · owners)]
+        Q[(Document Store\nAWS S3 / Google Drive\nRFP files · drafts · outputs)]
+    end
+
+    subgraph EXTERNAL["EXTERNAL DATA SOURCES"]
+        R[🌐 Competitor Sites\nPlaywright scraper\nVistaprint · Printful · etc.]
+        S[🌐 CustomInk.com\nLive pricing scraper]
+        T[📊 Trending Product Data\nMerchandising feed]
+        U[🎨 Image Generation\nProduct mockup API\nDALL-E / Ideogram]
+    end
+
+    subgraph OUTPUTS["OUTPUT & INTEGRATION LAYER"]
+        V[📋 Salesforce\nProject board · Tasks\nOpp updates · doc attach]
+        W[💬 Slack Bot\nNotifications · assignments\ndraft delivery · approvals]
+        X[📄 Document Generator\npython-docx · openpyxl\nFormat-agnostic export]
+        Y[📤 Submission\nFormatted response\nReady to send]
+    end
+
+    A --> D
+    B --> E
+    C --> F
+    D --> F
+    E --> F
+
+    F --> G
+    F --> H
+    F --> I
+    F --> J
+    F --> K
+    F --> L
+    F --> M
+    F --> N
+
+    G <--> R
+    G <--> O
+    K <--> R
+    K <--> S
+    J <--> T
+    J <--> O
+    L <--> O
+    M <--> U
+
+    G --> P
+    H --> P
+    I --> P
+    J --> P
+    K --> P
+    L --> Q
+    M --> Q
+    N --> P
+
+    F --> V
+    F --> W
+    L --> X
+    M --> X
+    N --> X
+    X --> Y
+
+    style INPUTS fill:#E3F2FD,stroke:#1565C0,color:#000
+    style INTAKE fill:#FFF3CD,stroke:#F0AD4E,color:#000
+    style BRAIN fill:#F3E5F5,stroke:#6A1B9A,color:#000
+    style AGENTS fill:#EDE7F6,stroke:#4527A0,color:#000
+    style MEMORY fill:#E8F5E9,stroke:#2E7D32,color:#000
+    style EXTERNAL fill:#FCE4EC,stroke:#880E4F,color:#000
+    style OUTPUTS fill:#E0F2F1,stroke:#00695C,color:#000

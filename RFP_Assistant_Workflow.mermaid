@@ -1,0 +1,75 @@
+flowchart TD
+    A([📧 RFP Received via Email]) --> B[Sales Rep creates\nSalesforce Opportunity + LOT Case\nUploads all RFP materials]
+    B --> C{{🤖 AI Assistant Auto-Triggers\nfrom Salesforce Stage Change}}
+
+    subgraph PHASE1["PHASE 1 · GO / NO-GO  ⏱ Day 0–2"]
+        C --> D[AI parses RFP\nExtracts: company, industry, deadline,\nformat, product categories, volume]
+        D --> E[AI generates Go/No-Go Brief\n• Competitive pricing landscape\n• Estimated margin range\n• Deal size & strategic fit\n• 🔴 🟡 🟢 recommendation]
+        E --> F{Haley + Ryan\nReview Brief}
+        F -->|🔴 No-Go| G([❌ Decline RFP\nAI drafts decline email])
+        F -->|🟡 Conditional| H[Define conditions\nbefore proceeding]
+        F -->|🟢 Go| I[Proceed to Kickoff]
+        H --> I
+    end
+
+    subgraph PHASE2["PHASE 2 · KICKOFF & PROJECT SETUP  ⏱ Day 2–3"]
+        I --> J[AI auto-generates\nSalesforce Project Board\n• All sections identified\n• Owners assigned\n• Deadlines set\n• Status dashboard live]
+        J --> K[AI categorizes RFP sections]
+        K --> L[🤖 AUTOPILOT\nCompany Info · Financials\nSustainability · SLA]
+        K --> M[⚠️ NEEDS INPUT\nProduct · Pricing\nCustom Questions]
+        K --> N[🔴 LEGAL FLAGS\nNon-standard T&Cs\nContracts · Security]
+        J --> O[AI notifies all stakeholders\nvia Slack with assigned sections\n+ deadlines]
+        N --> P[Legal review triggered\nimmediately ← not at the end]
+    end
+
+    subgraph PHASE3["PHASE 3 · DISCOVERY & QUESTIONS  ⏱ Week 1"]
+        O --> Q[AI drafts clarification\nquestion list from RFP]
+        Q --> R[AI applies standard\nquestion libraries\nKitting · Inventory · Shipping\nSecurity · International]
+        R --> S[Ryan + Deal Desk review\n& finalize questions]
+        S --> T[📤 Questions submitted\nto prospect by deadline]
+    end
+
+    subgraph PHASE4["PHASE 4 · PRODUCT RECOMMENDATION  ⏱ Week 1–2"]
+        M --> U{RFP type?}
+        U -->|Specific products\n& quantities listed| V[AI structures\nproduct list for pricing]
+        U -->|Broad categories\nor open-ended| W[AI generates\nProduct Recommendation\n• Industry analysis\n• Trending products\n• Similar partnerships\n• Winning combinations]
+        W --> X[Jess Thatcher /\nProduct SME validates]
+        V --> Y[Products confirmed ✅]
+        X --> Y
+    end
+
+    subgraph PHASE5["PHASE 5 · PRICING & COMPETITIVE ANALYSIS  ⏱ Week 1–2"]
+        Y --> Z[AI runs competitive\nprice scraping\n• Major competitors\n• Category benchmarks]
+        Z --> AA[AI generates\nPricing Analysis\n• Our price vs. market\n• Margin range\n• 🔴🟡🟢 viability]
+        AA --> AB[Cody's Loyalty Team\nvalidates margin calculations\n& finalizes pricing inputs]
+    end
+
+    subgraph PHASE6["PHASE 6 · RESPONSE DEVELOPMENT  ⏱ Week 2"]
+        L --> AC
+        AB --> AC[AI drafts complete\nRFP response\n• Autopilot sections pre-filled\n• Pricing inputs embedded\n• Custom answers drafted\n• Format-agnostic output]
+        P --> AC
+        AC --> AD[Ryan reviews + edits]
+        AD --> AE[Sales reviews + edits]
+        AE --> AF[AI tracks all changes\nVersion history maintained]
+    end
+
+    subgraph PHASE7["PHASE 7 · BRAND PACKAGE  ⏱ Week 2"]
+        AF --> AG[AI generates\nBranded Visual Package\n• Products with company logo\n• Category showcase visuals\n• Standard deck with\n  customized imagery]
+    end
+
+    subgraph PHASE8["PHASE 8 · FINAL APPROVAL & SUBMISSION  ⏱ Day before deadline"]
+        AG --> AH[AI compliance check\n• All sections answered?\n• Legal flags resolved?\n• Pricing approved?\n• Brand package attached?]
+        AH --> AI{Final Green Light\nHaley + Ryan}
+        AI -->|Changes needed| AD
+        AI -->|✅ Approved| AJ[AI formats response\nto match RFP format\nExcel · Word · Portal\nFormat-agnostic]
+        AJ --> AK([📤 RFP Submitted\nSalesforce updated\nProject board closed])
+    end
+
+    style PHASE1 fill:#FFF3CD,stroke:#F0AD4E,color:#000
+    style PHASE2 fill:#D6E4F0,stroke:#2E75B6,color:#000
+    style PHASE3 fill:#E8F5E9,stroke:#4CAF50,color:#000
+    style PHASE4 fill:#F3E5F5,stroke:#9C27B0,color:#000
+    style PHASE5 fill:#FCE4EC,stroke:#E91E63,color:#000
+    style PHASE6 fill:#E3F2FD,stroke:#1565C0,color:#000
+    style PHASE7 fill:#FFF8E1,stroke:#FF8F00,color:#000
+    style PHASE8 fill:#E8F5E9,stroke:#2E7D32,color:#000

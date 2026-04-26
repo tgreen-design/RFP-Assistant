@@ -1,0 +1,277 @@
+CUSTOMINK RFP AGENT — DEMO OUTPUT REPORT
+Generated: April 24, 2026 06:16 PM
+RFP: Meridian Health Systems — Branded Merchandise Program (MHS-2026-MERCH-042)
+
+============================================================
+
+PHASE 1 — INTAKE PARSER (Model: claude-haiku-4-5)
+
+============================================================
+
+company_name: Meridian Health Systems
+industry: Healthcare
+company_size: enterprise
+submission_deadline: 2026-05-16
+estimated_annual_volume: $1.8M – $2.4M USD
+product_type: broad_categories
+product_details: Employee onboarding kits (800–1,200/yr), employee recognition gifts (6,000–8,000/yr at 5 milestones), departmental uniforms/scrubs/lab coats/outerwear (15,000–20,000 garments/yr), patient experience & community giveaway items (25,000–35,000 units/yr at $3–$15), donor/VIP premium gifts (200–400 pieces/yr)
+geographic_scope: 48 contiguous US states + DC; drop-ship to employee home addresses
+evaluation_criteria:
+  - Total program cost (40%)
+  - Service quality and SLA compliance (25%)
+  - Platform capabilities (20%)
+  - Sustainability credentials (10%)
+  - Company stability (5%)
+sections:
+  - Company Overview: Company history, ownership structure, employee count, annual revenue range requi...
+  - Financial Stability: Audited financials or D&B report or bank reference letter; certificate of insura...
+  - Healthcare Client References: 3 enterprise references ($1M+ spend); at least 2 must be active healthcare syste...
+  - Online Ordering Portal: SSO via SAML 2.0 / Azure AD, role-based access, Oracle Cloud Financials API inte...
+  - Data Security & Compliance: SOC 2 Type II (current), HIPAA BAA, annual third-party audit docs, Data Processi...
+  - Fulfillment & Logistics SLA: 10-day standard / 3-day in-stock / 5-day rush capability for 30%+ of SKUs; drop-...
+  - Pricing Proposal: Setup fee, per-unit by category/decoration, per-kit assembly & fulfillment, port...
+  - Sustainability Disclosure: Corporate sustainability report, eco-certified product % (GOTS/Bluesign/Fair Tra...
+  - Contract Terms: Net 60 (non-negotiable), unlimited indemnification, 72-hour audit right, 30-day ...
+special_requirements:
+  - SAML 2.0 SSO integration with Azure AD
+  - Oracle Cloud Financials API integration
+  - SOC 2 Type II certification required
+  - HIPAA Business Associate Agreement (BAA)
+  - Drop-ship to employee home addresses (48 states + DC)
+  - Rush fulfillment for 30%+ of SKU catalog
+  - Cost-center billing with departmental approval workflows
+  - Annual Scope 3 emissions reporting
+  - 3-year exclusivity arrangement
+legal_flags:
+  - UNLIMITED INDEMNIFICATION clause — highly non-standard; no cap on liability
+  - IP ASSIGNMENT — all custom designs become sole Meridian property upon creation; contradicts standard CustomInk ownership model
+  - LIQUIDATED DAMAGES — $500/day after 3-day SLA breach; assess exposure at volume
+  - NET 60 PAYMENT TERMS marked non-negotiable
+  - UNILATERAL 30-DAY TERMINATION for any reason — no cure period
+  - 72-HOUR AUDIT RIGHT with no scope limitation
+  - 3-YEAR EXCLUSIVITY requirement
+missing_info:
+  - Current vendor name (important for competitive positioning)
+  - Whether the HIPAA BAA is required because any PHI flows through the program, or as a blanket policy
+  - Number of distinct cost centers / approvers in the portal
+  - Whether Oracle Cloud Financials integration must be real-time or batch
+  - Country-of-origin or material restrictions for healthcare settings
+  - Whether 'premium' donor gifts can include non-branded items from CustomInk catalog
+
+
+============================================================
+
+PHASE 2 — GO/NO-GO BRIEF (Model: claude-opus-4-6)
+
+============================================================
+
+RECOMMENDATION: YELLOW
+
+DEAL SNAPSHOT
+- Company: Meridian Health Systems
+- Industry: Healthcare
+- Estimated annual value: $1.8M – $2.4M USD (stated in RFP)
+- Submission deadline: May 16, 2026
+- Product scope: Full enterprise merchandise program — onboarding kits, recognition gifts, uniforms/scrubs, patient experience items, donor gifts; 5 distinct program tracks
+- Geographic scope: US only (48 contiguous states + DC)
+
+COMPETITIVE POSITION
+Meridian is a meaningful deal — $2M+/yr puts us squarely competitive with Vistaprint Business and Printful's enterprise tier on volume pricing, though our quality positioning and dedicated account management are strong differentiators in healthcare. RushOrderTees likely cannot support this breadth of program (kitting, portal, compliance). Canva Print and Zazzle are not serious competitors at this scale. The 40% evaluation weight on cost means price will be a real battleground; we should expect to be challenged on uniform/scrub per-unit pricing. Win probability: moderate-to-high if we can clear the legal flags and demonstrate healthcare credibility.
+
+MARGIN ASSESSMENT
+At $2M annual spend across this product mix, blended gross margin should land comfortably above the 28% green threshold — kit assembly, uniform programs, and recognition tiers all carry healthy margins. The patient experience/community giveaway segment ($3–$15 unit range at 25,000–35,000 units) may compress blended margins; flag for Cody to model unit economics at the low end. Net 60 payment terms will impact cash flow but should not affect reported margin. No pricing data available yet for precise modeling — scraper setup will sharpen this assessment.
+
+STRATEGIC FIT
+Healthcare is one of our strongest verticals — we have the compliance infrastructure, experience with regulated-industry clients, and the account management depth this program demands. The program scope (5 tracks, portal + kitting + fulfillment) is a strong fit for our enterprise capabilities. Risk: the 15,000–20,000 garment uniform track may push into SKU complexity that strains our standard catalog; confirm with Jess whether scrubs and lab coat decoration at this volume is within core capability or requires a specialty sourcing conversation.
+
+LEGAL FLAGS
+- UNLIMITED INDEMNIFICATION — Legal must review and counter; standard CustomInk agreements cap liability at contract value
+- IP ASSIGNMENT — All custom design IP assigned to Meridian on creation; conflicts with our standard IP model; Legal must propose counter language
+- LIQUIDATED DAMAGES ($500/day post 3-day breach) — Assess exposure at full program volume; may be manageable with SLA carve-outs
+- UNILATERAL 30-DAY TERMINATION — No cure period; request 30-day cure + 60-day termination notice
+- NET 60 — Non-negotiable per RFP; flag for finance approval
+- 3-YEAR EXCLUSIVITY — Acceptable at this volume; confirm with Ryan
+
+RECOMMENDATION RATIONALE
+This is a strong strategic opportunity — right industry, right size, right fit. The YELLOW rating is driven entirely by the legal terms cluster (unlimited indemnification + IP assignment + liquidated damages), not by deal quality or competitive position. These are non-negotiable blockers that Legal must review before we can commit to responding. If Legal can propose workable counter-language and Cody confirms margins hold at the low-end giveaway volume, this flips GREEN immediately.
+
+IF YELLOW — CONDITIONS TO PROCEED:
+1. Legal reviews and provides counter-language on unlimited indemnification (cap at 12 months contract value) and IP assignment clause — needed within 5 business days
+2. Cody models per-unit margin on the 25,000–35,000 unit community giveaway segment at $3–$15 unit cost to confirm blended margin stays above 20% floor
+3. Jess confirms scrubs/lab coat decoration capability at 15,000–20,000 garments/year (or flags if specialty sourcing is required)
+4. Ryan approves pursuit given Net 60 terms
+If all four conditions are met → pursue and advance to kickoff
+
+
+============================================================
+
+PHASE 3 — CLARIFICATION QUESTIONS (Model: claude-opus-4-6)
+
+============================================================
+
+CUSTOMINK CLARIFICATION QUESTIONS
+Meridian Health Systems — Branded Merchandise Program RFP
+RFP Reference: MHS-2026-MERCH-042
+
+Dear Meridian Health Systems Procurement Team,
+
+Thank you for the opportunity to respond to your Branded Merchandise Program RFP. To ensure our proposal precisely addresses your requirements, we have prepared the following clarification questions. Our goal is to give you a proposal that reflects your actual program needs rather than a generic response.
+
+Please return written answers to [CustomInk Rep Name] at [email] by [DATE — TO SET, typically April 30]. We will incorporate your responses into our proposal submitted by May 16.
+
+─────────────────────────────────────────────────────────────────
+KITTING & FULFILLMENT
+─────────────────────────────────────────────────────────────────
+
+1. [STANDARD] What is the anticipated frequency of onboarding kit orders — daily, weekly, or batched by hire cohort? [STANDARD]
+
+2. [STANDARD] For onboarding kits: will new hires self-select any items (e.g., apparel size/style), or will all kit contents be pre-defined and shipped as-assembled? [STANDARD]
+
+3. [STANDARD] What is the required turnaround time from a new hire's start date to kit delivery at their home address? [STANDARD]
+
+4. [STANDARD] Is a returns and exchange process required for onboarding kit items (e.g., wrong size apparel)? If so, who manages the return logistics — Meridian HR or the vendor? [STANDARD]
+
+5. [SPECIFIC TO THIS RFP] The RFP describes five distinct program tracks (onboarding kits, recognition gifts, uniforms, patient experience items, donor gifts). Should each track have a separate ordering portal/storefront, or will all tracks be unified under a single portal with role-based access controlling which track each user sees?
+
+6. [SPECIFIC TO THIS RFP] For patient experience and community giveaway items ($3–$15 range), are these ordered by a central team on a planned basis, or do individual departments/clinics order on demand?
+
+─────────────────────────────────────────────────────────────────
+INVENTORY MANAGEMENT
+─────────────────────────────────────────────────────────────────
+
+7. [STANDARD] For the uniform program (scrubs, lab coats, outerwear): will inventory be managed on a buy-ahead/stocking basis, or ordered purely on-demand as departments request? [STANDARD]
+
+8. [STANDARD] What is the expected number of active SKUs in the uniform catalog? Are there current brand guidelines specifying approved styles, colors, and decoration placement by department? [STANDARD]
+
+9. [STANDARD] Who has authority to approve uniform replenishment orders — department heads, a central procurement contact, or both? [STANDARD]
+
+10. [SPECIFIC TO THIS RFP] The RFP mentions departmental approval workflows for uniforms. How many distinct cost centers and approvers should the portal support at launch?
+
+11. [SPECIFIC TO THIS RFP] For recognition gifts (6,000–8,000/year across 5 milestone tiers): are gifts selected from a fixed catalog per tier, or does Meridian want recipients to choose from a curated selection? If choice-based, how many options per tier?
+
+─────────────────────────────────────────────────────────────────
+SECURITY & COMPLIANCE
+─────────────────────────────────────────────────────────────────
+
+12. [STANDARD] Is the SOC 2 Type II requirement a hard pass/fail criterion, or will you accept an in-progress certification with a completion timeline? [STANDARD]
+
+13. [STANDARD] Does the HIPAA Business Associate Agreement requirement reflect actual PHI flowing through the program, or is it applied as a blanket policy to all vendors? [STANDARD]
+
+14. [STANDARD] Are third-party vendor audits required at contract execution, annually, or only upon request? What is the audit scope (facility, data practices, financial)? [STANDARD]
+
+15. [SPECIFIC TO THIS RFP] What employee or patient data, if any, would be shared with the merchandise vendor? (For example: employee names and home addresses for kit shipping, or milestone anniversary dates for recognition triggers.)
+
+16. [SPECIFIC TO THIS RFP] Do any of the four states (VA, MD, PA, DC) have specific data processing requirements beyond standard vendor agreements that you've already identified?
+
+─────────────────────────────────────────────────────────────────
+PRODUCT & DECORATION
+─────────────────────────────────────────────────────────────────
+
+17. [STANDARD] Do you have existing brand guidelines (logo files, approved colors with Pantone/CMYK/HEX values, approved fonts)? Are separate brand standards in place by department? [STANDARD]
+
+18. [STANDARD] Who has final approval authority on product designs and pre-production samples — a central brand manager, department heads, or both? [STANDARD]
+
+19. [STANDARD] What is your expected sample approval timeline for new products added to the program? [STANDARD]
+
+20. [STANDARD] Are there material, manufacturing, or country-of-origin restrictions for products entering your healthcare facilities (e.g., latex-free, OEKO-TEX certified, domestic manufacturing preference)? [STANDARD]
+
+21. [SPECIFIC TO THIS RFP] For scrubs and lab coats in the uniform program: do you require specific regulatory-grade materials (antimicrobial, fluid-resistant), or is standard medical-style decoration on commercial scrubs acceptable?
+
+22. [SPECIFIC TO THIS RFP] For the donor/VIP gifts (200–400 pieces/year): is there an existing approved product list, or will the vendor curate and propose options at each tier?
+
+─────────────────────────────────────────────────────────────────
+PRICING & PAYMENT
+─────────────────────────────────────────────────────────────────
+
+23. [STANDARD] The RFP states estimated annual spend of $1.8M–$2.4M. Is this based on your current program actuals, or a projected increase from your current program? [STANDARD]
+
+24. [STANDARD] Will payment be issued by a central Meridian AP function, or by individual departments against their cost center budgets? [STANDARD]
+
+25. [STANDARD] The RFP states Net 60 is non-negotiable. Will all invoices (including kit orders and recognition gifts) follow Net 60, or will any program tracks require different terms? [STANDARD]
+
+26. [SPECIFIC TO THIS RFP] The RFP requests volume discount tiers at $500K, $1M, $1.5M, and $2M+. Should discounts be applied retroactively when a tier is reached, or prospectively from the following invoice period?
+
+27. [SPECIFIC TO THIS RFP] For the Oracle Cloud Financials integration: is real-time invoice sync required, or is a nightly/weekly batch export acceptable? Do you have an existing vendor integration guide or API documentation to share?
+
+─────────────────────────────────────────────────────────────────
+RESPONSE DEADLINE & NEXT STEPS
+─────────────────────────────────────────────────────────────────
+
+Please return written answers by [DATE — TO SET]. We will incorporate all clarifications into our proposal submitted by May 16, 2026.
+
+If it would be helpful, we are also available for a 30-minute discovery call with your procurement team to address questions more efficiently. Please let us know your preference.
+
+We look forward to the opportunity to support Meridian Health Systems.
+
+[CustomInk Account Executive Name]
+[Title]
+[Phone | Email]
+
+═══════════════════════════════════════════════════════════════
+INTERNAL ROUTING NOTE (do not send to Meridian)
+═══════════════════════════════════════════════════════════════
+
+Before sending this question list, route for internal review:
+
+NEEDS RYAN PARRISH APPROVAL:
+- Q5 (portal architecture: unified vs. separate storefronts) — answer shapes scope and cost significantly
+- Q10 (number of cost centers/approvers) — impacts portal build estimate
+- Q27 (Oracle Cloud integration requirements) — determines if we need engineering resources
+
+NEEDS CODY PERRY INPUT (Pricing/Loyalty):
+- Q23 (whether $1.8–2.4M is actuals vs. projected) — affects pricing confidence
+- Q26 (discount retroactivity model) — determines pricing structure
+
+NEEDS LEGAL REVIEW BEFORE SENDING:
+- Q13 (HIPAA BAA scope) — may affect our legal team's language in BAA counter-proposal
+- Q15 (what data is shared) — data minimization/privacy implications
+- Q16 (state-specific DPA requirements) — Legal should confirm our DPA covers VA, MD, PA, DC
+
+
+============================================================
+
+PHASE 4 — PROJECT BOARD: SECTION CATEGORIZATION (Model: claude-haiku-4-5)
+
+============================================================
+
+SUMMARY: 4 AUTOPILOT | 3 NEEDS INPUT | 2 LEGAL FLAGS
+
+── AUTOPILOT (pre-fill from boilerplate) ──
+  [LOW] Company Overview
+    Owner: Ryan Parrish
+    Notes: Standard company overview, history, ownership. Pull from approved boilerplate in config.AUTOPILOT_CONTENT['company_overview_short']. Spot-check for accuracy.
+
+  [MEDIUM] Financial Stability
+    Owner: Ryan Parrish
+    Notes: D&B report and certificate of insurance. Coordinate with Finance to confirm current COI meets $5M GL minimum. Attach, do not draft.
+
+  [MEDIUM] Sustainability Disclosure
+    Owner: Ryan Parrish
+    Notes: Pull from approved sustainability statement in config.AUTOPILOT_CONTENT['sustainability']. Flag: Meridian requires annual Scope 3 emissions reporting — confirm this is feasible before committing.
+
+  [LOW] Fulfillment & Logistics SLA
+    Owner: Ryan Parrish
+    Notes: Standard SLA response from config.AUTOPILOT_CONTENT['sla_standard']. Note: 30% rush capability requirement — confirm this matches current operational spec before accepting.
+
+── NEEDS INPUT (requires human work) ──
+  [HIGH] Healthcare Client References
+    Owner: Ryan Parrish
+    Notes: Must identify 3 enterprise references with $1M+ spend; at least 2 must be active healthcare system clients. Ryan to pull from CRM and obtain reference approval. High priority — this is a key differentiator.
+
+  [HIGH] Online Ordering Portal
+    Owner: Ryan Parrish
+    Notes: SAML 2.0 / Azure AD SSO and Oracle Cloud Financials API integration are non-trivial platform requirements. Ryan to engage engineering/platform team to confirm feasibility and draft capability statement. Do not commit without engineering sign-off.
+
+  [HIGH] Pricing Proposal
+    Owner: Cody Perry
+    Notes: Full pricing matrix required: setup fee, per-unit by category/decoration, kit assembly & fulfillment, portal licensing, rush surcharge, and volume tiers at 4 levels. Cody to build in margin tool. Flag: Net 60 is non-negotiable — confirm finance approval. 24-month price lock required.
+
+── LEGAL FLAG (route to Legal immediately) ──
+  [HIGH] Data Security & Compliance
+    Owner: Legal Team
+    Notes: SOC 2 Type II cert required (confirm current), HIPAA BAA required (Legal to draft or pull standard), Data Processing Agreement for 4 states (VA, MD, PA, DC). Legal to review and prepare all three documents.
+
+  [HIGH] Contract Terms
+    Owner: Legal Team
+    Notes: CRITICAL legal flags: (1) unlimited indemnification — counter with cap at 12-month contract value; (2) IP assignment of all custom designs — propose license-back model; (3) $500/day liquidated damages — negotiate cap and SLA carve-outs; (4) 30-day unilateral termination with no cure period — propose 30-day cure + 60-day notice; (5) 72-hour unlimited audit right — propose reasonable scope limitation. Legal must review ALL five before we can proceed.
+
